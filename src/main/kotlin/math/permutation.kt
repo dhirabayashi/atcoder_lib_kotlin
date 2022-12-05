@@ -1,4 +1,4 @@
-package com.github.dhirabayashi.atcoder.lib.math
+package math
 
 import java.math.BigInteger
 

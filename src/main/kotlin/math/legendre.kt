@@ -1,4 +1,4 @@
-package com.github.dhirabayashi.atcoder.lib.math
+package math
 
 // ルジャンドルの定理
 // https://zenn.dev/dhirabayashi/articles/ca2ff0ad126888

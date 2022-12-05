@@ -1,4 +1,4 @@
-package com.github.dhirabayashi.atcoder.lib.datastructure
+package datastructure
 
 // スパーステーブル
 // https://zenn.dev/dhirabayashi/articles/31c854ad4a8c8b

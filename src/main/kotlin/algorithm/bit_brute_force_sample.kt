@@ -1,10 +1,10 @@
-package com.github.dhirabayashi.atcoder.lib.algorithm
+package algorithm
 
 import kotlin.math.min
 
 // bit全探索
 // https://zenn.dev/dhirabayashi/articles/6638a52439a189
-fun main() {
+fun sample() {
     val (n, m, x) = readLine()!!.split(" ").map { it.toInt() }
     val ca = List(n) {
         readLine()!!.split(" ").map { it.toInt() }

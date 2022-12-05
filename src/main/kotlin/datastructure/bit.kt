@@ -1,4 +1,4 @@
-package com.github.dhirabayashi.atcoder.lib.datastructure
+package datastructure
 
 import java.math.BigInteger
 

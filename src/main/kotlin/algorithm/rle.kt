@@ -1,4 +1,4 @@
-package com.github.dhirabayashi.atcoder.lib.algorithm
+package algorithm
 
 // ランレングス圧縮
 // https://zenn.dev/dhirabayashi/articles/88649157041a2c

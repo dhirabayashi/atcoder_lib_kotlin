@@ -1,4 +1,4 @@
-package com.github.dhirabayashi.atcoder.lib.algorithm
+package algorithm
 
 // 最大公約数（ユークリッドの互除法）
 // https://zenn.dev/dhirabayashi/articles/ffc43f33faebed

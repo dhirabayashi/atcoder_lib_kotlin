@@ -1,7 +1,7 @@
-package com.github.dhirabayashi.atcoder.lib.datastructure
+package datastructure
 
 // https://zenn.dev/dhirabayashi/articles/557bbf51c35edf
-fun main() {
+fun sample2() {
     val a = readLine()!!.split(" ")
     // 累積和
     val s = mutableListOf(0L)

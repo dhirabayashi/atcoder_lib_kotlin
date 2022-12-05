@@ -1,4 +1,4 @@
-package com.github.dhirabayashi.atcoder.lib.math
+package math
 
 fun isInside(ax: Int, ay: Int, bx: Int, by: Int, cx: Int, cy: Int, tx: Int, ty: Int): Boolean {
     val abXat = (bx-ax)*(ty-ay) - (by-ay)*(tx-ax)

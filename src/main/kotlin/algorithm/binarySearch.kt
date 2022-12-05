@@ -1,4 +1,4 @@
-package com.github.dhirabayashi.atcoder.lib.algorithm
+package algorithm
 
 import kotlin.math.abs
 

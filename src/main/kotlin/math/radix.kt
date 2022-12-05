@@ -1,4 +1,4 @@
-package com.github.dhirabayashi.atcoder.lib.math
+package math
 
 // N進数に変換
 // https://zenn.dev/dhirabayashi/articles/7ab100334504b0
