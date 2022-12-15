@@ -3,6 +3,7 @@ package math
 import java.math.BigDecimal
 import java.math.RoundingMode
 
+// 四捨五入のサンプル
 fun roundSample() {
     val (x, k) = readLine()!!.split(" ").map { it.toLong() }
     val decimal = BigDecimal(x)
