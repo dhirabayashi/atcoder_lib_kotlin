@@ -2,12 +2,12 @@ package datastructure
 
 // Union-Find
 // https://zenn.dev/dhirabayashi/articles/1924139543f94e
-private class UnionFind(n: Int){
-    private val roots = IntArray(n){ it }
-    private val ranks = IntArray(n){ 1 }
+private class UnionFind(n: Int) {
+    private val roots = IntArray(n) { it }
+    private val ranks = IntArray(n) { 1 }
 
-    fun find(i: Int): Int{
-        if(roots[i] != i){
+    fun find(i: Int): Int {
+        if(roots[i] != i) {
             roots[i] = find(roots[i])
         }
 
@@ -18,17 +18,17 @@ private class UnionFind(n: Int){
         return find(x) == find(y)
     }
 
-    fun union(x: Int, y: Int){
+    fun union(x: Int, y: Int) {
         val rootX = find(x)
         val rootY = find(y)
 
         if(rootX == rootY) {
             return
         }
-        if(ranks[rootX] > ranks[rootY]){
+        if(ranks[rootX] > ranks[rootY]) {
             roots[rootY] = rootX
             ++ranks[rootX]
-        }else{
+        } else {
             roots[rootX] = rootY
             ++ranks[rootY]
         }
