@@ -17,3 +17,26 @@ fun kthPermutation(n: Int, ik: BigInteger, factorial: List<BigInteger>): List<In
     }
     return l
 }
+// 順列全探索
+// https://zenn.dev/dhirabayashi/articles/74dbc213598999
+class Permutation<T>(private val list: MutableList<T>) {
+    private val queue = ArrayDeque(list)
+
+    fun forEach(action: (MutableList<T>) -> Unit) {
+        forEach(0 ,0, action)
+    }
+
+    private fun forEach(count: Int, layer: Int, action: (MutableList<T>) -> Unit) {
+        if(count == list.size) {
+            action(list)
+            return
+        }
+
+        for(i in count until list.size) {
+            val elem = queue.removeFirst()
+            list[layer] = elem
+            forEach(count + 1, layer + 1, action)
+            queue.add(elem)
+        }
+    }
+}
