@@ -26,6 +26,14 @@ class Permutation<T>(private val list: MutableList<T>) {
         forEach(0 ,0, action)
     }
 
+    fun toList(): List<List<T>> {
+        val list = mutableListOf<List<T>>()
+        forEach {
+            list.add(it.toList())
+        }
+        return list.toList()
+    }
+
     private fun forEach(count: Int, layer: Int, action: (MutableList<T>) -> Unit) {
         if(count == list.size) {
             action(list)
