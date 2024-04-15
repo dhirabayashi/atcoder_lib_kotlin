@@ -2,7 +2,7 @@ package algorithm
 
 import kotlin.math.min
 
-// bit全探索
+// bit全探索のサンプル
 // https://zenn.dev/dhirabayashi/articles/6638a52439a189
 fun sample() {
     val (n, m, x) = readLine()!!.split(" ").map { it.toInt() }
